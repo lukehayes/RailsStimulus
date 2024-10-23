@@ -7,3 +7,13 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+
+Post.destroy_all
+
+1.upto(5) do |i|
+  Post.create!([{
+      title: "Post #{i}",
+      body: "I am the post body #{i}"
+    }])
+end
