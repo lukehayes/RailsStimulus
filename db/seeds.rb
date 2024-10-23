@@ -13,7 +13,7 @@ Post.destroy_all
 
 1.upto(5) do |i|
   Post.create!([{
-      title: "Post #{i}",
-      body: "I am the post body #{i}"
-    }])
-end
+    title: "Post #{i}",
+    body: "I am the post body #{i}"
+  }])
+ed
