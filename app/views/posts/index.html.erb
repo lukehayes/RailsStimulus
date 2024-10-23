@@ -1,5 +1,10 @@
 <p style="color: green"><%= notice %></p>
 
+<div data-controller="custom" data-action="click->custom#foo">
+  <p>I am a p tag</p>
+  <button>Greet</button>
+</div>
+
 <% content_for :title, "Posts" %>
 
 <h1>Posts</h1>
@@ -14,3 +19,4 @@
 </div>
 
 <%= link_to "New post", new_post_path %>
+
