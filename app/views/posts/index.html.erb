@@ -9,11 +9,11 @@
 
 <h1 class='display:block'>Posts</h1>
 
-<div id="posts" class=''>
+<div id="posts" class='pt-8'>
   <% @posts.each do |post| %>
     <%= render post %>
     <p>
-      <%= link_to "Show this post", post %>
+    <%= link_to "Show this post", post, class: 'bg-slate-300 p-2 rounded my-24'%>
     </p>
   <% end %>
 </div>
