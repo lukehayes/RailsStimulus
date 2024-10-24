@@ -17,7 +17,18 @@
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.6.0/backbone-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js "></script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+    crossorigin="anonymous"></script>
+
+    <script src=" https://cdn.jsdelivr.net/npm/backbone@1.6.0/backbone-min.min.js "></script>
+
+
+
+
     <%= javascript_importmap_tags %>
 
 
@@ -26,6 +37,20 @@
   <body>
     <main class="container mx-auto mt-28">
       <%= yield %>
+
+    <script>
+      var note = Backbone.Model.extend({
+
+        initialize: function()
+        {
+          console.log("initialized");
+        }
+
+      });
+
+
+    </script>
+
     </main>
   </body>
 </html>
