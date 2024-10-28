@@ -1,8 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
 <div data-controller="custom" data-action="click->custom#foo">
-  <p>I am a p tag</p>
-  <button>Greet</button>
+    <input type="text" data-hello-target="name">
+    <p>I am a p tag</p>
+    <button>Greet</button>
 </div>
 
 <% content_for :title, "Posts" %>
