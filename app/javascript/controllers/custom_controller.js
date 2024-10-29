@@ -2,16 +2,17 @@ import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
 
-  static targets = ['name'];
-
-  connect() {
-    //this.element.textContent = "A custom controller right here."
-  }
+  static targets = [ "name" ];
 
   foo() {
     console.log("Element has been clicked");
-    const name = this.nameTarget;
-    console.log(name);
-    console.log(name.value);
+
+    console.log(this.nameTarget);
+    console.log(`Name: ${this.name}`);
+  }
+
+  get name()
+  {
+    return this.nameTarget.value;
   }
 }
